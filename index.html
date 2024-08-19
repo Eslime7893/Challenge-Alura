@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <main class="encriptador">
+        <section class="encriptador__area">
+            <h1></h1>
+            <textarea class="encriptador__area__texto" placeholder="Ingresa tu mensaje a encriptar aquí" id="textoUsuario" name="textoUsuario" rows="17" cols="50" style="border: none;"></textarea>
+            <p class="encriptador__parrafo"><img src="./assets/Icono.png" alt="">Solo letras minúsculas y sin acentos</p>
+        
+            <div class="encriptador__botones">
+                <button class="encriptador__boton" onclick="btnEncriptar()">Encriptar</button>
+                <button class="encriptador__boton" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>    
+        </section> 
+        
+        <div class="resultado">
+    
+            <div class="texto__desencriptado">
+                <textarea class="resultado__area" id="textoDesencriptado" placeholder="No he encontrado tu mensaje" rows="19" cols="50" style="border: none;"></textarea>
+                <button class="encriptador__boton" onclick="copiar()"; id="copiar">Copiar</button> 
+            </div>
+
+        </div>
+
+    </main>
+    <footer class="footer">Desarrollado por Lizeth Méndez</footer>
+
+    <script src="encriptador.js"></script></script>
+</body>
+</html>
